@@ -14,11 +14,14 @@ public class AddressBuilder {
         String billingStreet = myScanner.nextLine();
         System.out.print("Your billing city: ");
         String billingCity = myScanner.nextLine();
+        System.out.print("Your billing State: ");
+        String billingState = myScanner.nextLine();
         System.out.print("Your billing zip code: ");
         String billingZipCode = myScanner.nextLine();
         addressInfo.append("Billing Address: \n")
                 .append(billingStreet).append("\n")
                 .append(billingCity).append("\n")
+                .append(billingState).append("\n")
                 .append(billingZipCode).append("\n");
 
         // Prompt user for shipping address
@@ -26,11 +29,14 @@ public class AddressBuilder {
         String shippingStreet = myScanner.nextLine();
         System.out.print("Your shipping city: ");
         String shippingCity = myScanner.nextLine();
+        System.out.print("Your shipping state: ");
+        String shippingState = myScanner.nextLine();
         System.out.print("Your shipping zip code: ");
         String shippingZipCode = myScanner.nextLine();
         addressInfo.append("Shipping Address: \n")
                 .append(shippingStreet).append("\n")
                 .append(shippingCity).append(", ")
+                .append(shippingState).append("\n")
                 .append(shippingZipCode);
 
         myScanner.close();
